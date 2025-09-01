@@ -1,16 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Jan 27 08:01:36 2020
-
-@author: Ardhendu
-"""
-
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Dec 13 10:33:32 2019
-
-@author: Ardhendu
-"""
 from keras.layers import Layer
 #from keras import layers
 from keras import backend as K
