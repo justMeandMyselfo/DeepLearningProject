@@ -7,3 +7,6 @@ Dataset food101N which is food101 with added noises. I would recommand to add an
 Two different models were built, first one has a lower accuracy but is much lighter and faster to train, and so works perfectly fine on a smartphone thanks to TFlite.->Model for mobile.
 
 Second one is more accurate, slower to train (need GPU to train) and because of the functions added it is not possible to use it on a phone, but we could host that model on a server. -> HighAccuracyModel.
+
+
+By Arthur AVIRON-VIOLET.
