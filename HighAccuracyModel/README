@@ -1,1 +1,17 @@
+This model is the one with the highest accuracy, I had 93% accuracy after 13 epoch using CAP method, you need to train it on a GPU, 
+I used google colab for that, it takes around an hour for one epoch on a T4 GPU, I would guess 15min on a A100.
+Every function can be modified based on your needs but I believe I set them to their best. 
+
+To use it with Google colab first download the dataset food101N (around 7GB) and the class folder in your drive
+(much faster to work that way), then on colab import it from your drive with "import from drive", then split the dataset in two,
+training set and valiadtion set with "train-validation sets", and last but not least run "main" so that it starts training.
+
+You can use the Nutrition5K dataset from a Google Team for meal and not just food (dataset is around 195GB).
+An improvement I would add is SAM from MetaAI and then I would host the model on client side so that it is much faster 
+and then I would call it from a smartphone.
+
+If you have any questions or advice : jambon2paris75@gmail.com
+
+Sadly, after Papers with code sunsetted, I can not find the paper I used to build that project, so credit to X for the functions 
+I got from him and then modified.
 
