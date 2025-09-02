@@ -1,0 +1,14 @@
+This model is the one that fit most mobile. Since I don't have any extra functions you can convert it to TFlite very easily.
+It uses EfficientNETV2, ended up with 70% accuracy after 20 epoch, very fast to train. The lite model is about 200Mb so very easy
+to download on a phone. You can build the app of your choice, the processing time is less than a second, if it sees something then
+it tells you right away what food it is, the weight of it and the calories. Despite 70% accuracy while training, I never had error
+using it in my daily life.
+To estimate the weight and calories I added an extra csv file with the density of each food and calories for 100g, then on the user
+side we count the number of Pixel in the scanning area * density for weight and then we get the calories.
+
+You can add MobileSAM to better segment the scanning area, I believe you have to pay for it. And I think you have to call it, so it
+takes a longer processing time.
+
+For foods that are not in the dataset you can either create a self learning model (better but longer), use a trust index fastest 
+and easiest one, in my case if the trust index is < 0.8 then it doesn't say anything, or an extra folder with random images before
+training.
